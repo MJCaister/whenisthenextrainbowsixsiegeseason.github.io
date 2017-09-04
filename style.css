@@ -12,7 +12,8 @@ body {
 }
 
 .timer {
-  background-color: #d8d8d8;
-  width: auto;
-  height: auto;
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
 }
