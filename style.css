@@ -1,1 +1,12 @@
-
+* {
+  font-family: Arial;
+  font-color: #999999
+  }
+p {
+  text-align: center;
+  font-size: 60px;
+}
+body {
+  background-image: url("background.jpg");
+  width: auto;
+}
