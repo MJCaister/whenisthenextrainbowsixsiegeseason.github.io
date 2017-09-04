@@ -18,3 +18,10 @@ body {
   width: auto;
 }
 
+#date_confirm {
+  color: green;
+}
+
+#time_confirm {
+  color: red;
+}
