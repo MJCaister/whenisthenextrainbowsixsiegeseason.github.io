@@ -19,6 +19,9 @@ body {
   width: auto;
 }
 
+#current_time {
+	font-size: 45px;
+}
 #date_confirm {
   color: green;
 }
