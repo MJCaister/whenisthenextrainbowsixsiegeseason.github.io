@@ -5,14 +5,15 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<div id="timer">
+<div id="pass_timer">
 <br>
 <center><img src="logo.png" alt="R6S Logo" width="400" height="100"></center>
 <center><h1>Time till the next Rainbow Six Siege Season</h1></center>
     <center><h3 id="date_confirm">Date Confirmed</h3></center>
     <center><h3 id="time_confirm">Time Confirmed</h3></center>
 	<center><p id="current_time" title="This clock is set to your system's Time Zone"></p>
-<p id="demo"></p>
+<p id="pass_timer"></p>
+<p id="norm_timer"></p>
 </div>
 <embed src="background.mp3" width="180" height="10" loop="true" autostart="true" hidden="true" />
 <div id="acknowledgement">
@@ -36,12 +37,34 @@ var x = setInterval(function() {
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
-    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    document.getElementById("pass_timer").innerHTML = days + "d " + hours + "h "
     + minutes + "m " + seconds + "s ";
     
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("demo").innerHTML = "The New Season is HERE!";
+        document.getElementById("pass_timer").innerHTML = "The New Season is HERE!";
+    }
+}, 1000);
+setInterval(displayclock, 500);
+var countDownDate = new Date("September 6, 2017 03:00:00").getTime();
+
+var x = setInterval(function() {
+
+    var now = new Date().getTime();
+    
+    var distance = countDownDate - now;
+    
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    document.getElementById("norm_timer").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("norm_timer").innerHTML = "The New Season is HERE!";
     }
 }, 1000);
 setInterval(displayclock, 500);
@@ -67,7 +90,7 @@ function displayclock () {
 		min = '0' + min;
 	}
 	
-	document.getElementById("current_time").innerHTML = hrs + ':' + min + ':' + sec;
+	document.getElementById("current_time").innerHTML = 'System Time' hrs + ':' + min + ':' + sec;
 }
 </script>
 

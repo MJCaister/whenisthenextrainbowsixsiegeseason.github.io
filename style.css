@@ -19,6 +19,14 @@ body {
   width: auto;
 }
 
+#norm_timer {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  width: auto;
+}
+
 #current_time {
 	font-size: 45px;
 }
@@ -27,7 +35,7 @@ body {
 }
 
 #time_confirm {
-  color: green;
+  color: red;
 }
 
 #acknowledgement {
