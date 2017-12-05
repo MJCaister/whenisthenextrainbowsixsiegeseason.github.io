@@ -1,5 +1,5 @@
 * {
-  font-family: Arial;
+  font-family: Times;
   }
 p {
   text-align: center;
@@ -18,7 +18,7 @@ body {
   opacity: 0.6;
   width: auto;
 }
-
+/*
 #norm_timer {
   margin: 30px;
   background-color: #ffffff;
@@ -30,6 +30,7 @@ body {
 #current_time {
 	font-size: 45px;
 }
+*/
 #date_confirm {
   color: green;
 }
@@ -45,4 +46,8 @@ body {
   opacity: 0.6;
   width: auto;
   text-align: center;
+}
+
+h4 {
+    font-size: 15px;
 }
